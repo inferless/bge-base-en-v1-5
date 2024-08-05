@@ -1,6 +1,0 @@
-build:
-  cuda_version: "12.1.1"
-  python_packages:
-    - "transformers==4.43.4"
-    - "tokenizers==0.19.1"
-    - "torch==2.4.0"
