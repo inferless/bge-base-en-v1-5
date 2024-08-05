@@ -1,3 +1,4 @@
+
 # BGE-base-en-v1.5
 BGE-base-en-v1.5 is a general embedding model developed by BAAI (Beijing Academy of Artificial Intelligence). This model is designed to transform text into compact vector representations, which can be utilized for various natural language processing tasks, such as text retrieval and clustering.
 
@@ -10,17 +11,19 @@ BGE-base-en-v1.5 is a general embedding model developed by BAAI (Beijing Academy
 ---
 ## Quick Start
 Here is a quick start to help you get up and running with this template on Inferless.
+=======
+# Tutorial - Deploy bge-base-en-v1.5 using Inferless
 
 ### Fork the Repository
 Get started by forking the repository. You can do this by clicking on the fork button in the top right corner of the repository page.
 
 This will create a copy of the repository in your own GitHub account, allowing you to make changes and customize it according to your needs.
 
+
 ## Create a Custom Runtime in Inferless
 To access the custom runtime window in Inferless, simply navigate to the sidebar and click on the **Create new Runtime** button. A pop-up will appear.
 
 Next, provide a suitable name for your custom runtime and proceed by uploading the **config.yaml** file given above. Finally, ensure you save your changes by clicking on the save button.
-
 
 ### Import the Model in Inferless
 Log in to your inferless account, select the workspace you want the model to be imported into and click the Add Model button.
@@ -57,6 +60,10 @@ curl --location '<your_inference_url>' \
             }
             '
 ```
+
+Select the Github and choose **Repo(custom code)** as your model source and select your provider, and use the forked repo URL as the **Model URL**.
+
+Enter all the required details to Import your model. Refer [this link](https://docs.inferless.com/integrations/github-custom-code) for more information on model import.
 
 ---
 ## Customizing the Code
