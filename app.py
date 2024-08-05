@@ -4,8 +4,8 @@ import torch
 class InferlessPythonModel:
     
     def initialize(self):
-        self.tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-large-zh-v1.5').to("cuda")
-        self.model = AutoModel.from_pretrained('BAAI/bge-large-zh-v1.5')
+        self.tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-large-zh-v1.5')
+        self.model = AutoModel.from_pretrained('BAAI/bge-large-zh-v1.5').to("cuda")
         self.model.eval()
 
     def infer(self, inputs):
