@@ -3,8 +3,8 @@ import torch
 
 class InferlessPythonModel:
     def initialize(self):
-        self.tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-large-zh-v1.5')
-        self.model = AutoModel.from_pretrained('BAAI/bge-large-zh-v1.5')
+        self.tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-large-en-v1.5')
+        self.model = AutoModel.from_pretrained('BAAI/bge-large-en-v1.5')
         self.model.eval()
 
     def infer(self, inputs):
