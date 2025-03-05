@@ -1,13 +1,13 @@
 import os
-os.environ["HF_HUB_ENABLE_HF_TRANSFER"]='1'
-from huggingface_hub import snapshot_download
+# os.environ["HF_HUB_ENABLE_HF_TRANSFER"]='1'
+# from huggingface_hub import snapshot_download
 from transformers import AutoTokenizer, AutoModel
 import torch
 
 class InferlessPythonModel:
     
     def initialize(self):
-        snapshot_download(repo_id='BAAI/bge-large-zh-v1.5',allow_patterns=["*.bin"])
+        # snapshot_download(repo_id='BAAI/bge-large-zh-v1.5',allow_patterns=["*.bin"])
         self.tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-large-zh-v1.5')
         self.model = AutoModel.from_pretrained('BAAI/bge-large-zh-v1.5').to("cuda")
         self.model.eval()
